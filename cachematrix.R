@@ -2,7 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## this function is make a matrix object can cache its inverse
+## the standard function to return matrix inverse is solve().
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -19,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## this function is compute inverse of the special matrix returned by makecacheMatrix above
+## the standard function to return matrix inverse is solve().
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
   if(!is.null(m)) {
